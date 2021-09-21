@@ -39,7 +39,8 @@ ul {
 }
 
 .secondaryButton {
-    background-color:rgb(201, 200, 200)
+    background-color:rgb(201, 200, 200);
+    color: white;
 }
 
 .secondaryButton:hover {
