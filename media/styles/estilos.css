@@ -16,17 +16,32 @@ ul {
     height: 40px;
 }
 
-.mainButton {
-    background-color:rgb(72, 70, 70);
-    color:white;
+.button {
     border: 0px;
     padding:5px 10px;
     border-radius: 8px;
     font-weight: bolder;
 }
 
-.mainButton:hover {
+.button:hover {
     cursor: pointer;
-    box-shadow: 1px, 1px black;
     transform: scale(1.1);
+}
+
+.mainButton {
+    background-color:rgb(72, 70, 70);
+    color:white;
+    
+}
+
+.mainButton:hover {
+    box-shadow: 2px, 2px black;
+}
+
+.secondaryButton {
+    background-color:rgb(201, 200, 200)
+}
+
+.secondaryButton:hover {
+    box-shadow: 2px, 2px rgb(58, 57, 57);
 }
