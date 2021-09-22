@@ -11,4 +11,69 @@ ul {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: rgb(124, 20, 20);
+    border-bottom: 1px solid black;
+}
+.navbar > li {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 40px;
+}
+
+.button {
+    border: 0px;
+    padding:5px 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.mainButton {
+    background-color:rgb(72, 70, 70);
+    color:white;
+    
+}
+
+.mainButton:hover {
+    box-shadow: 2px, 2px black;
+}
+
+.secondaryButton {
+    background-color:rgb(201, 200, 200);
+    color: white;
+}
+
+.secondaryButton:hover {
+    box-shadow: 2px, 2px rgb(58, 57, 57);
+}
+
+.buscar {
+    background-color: rgb(242, 239, 239);
+    border: 1px solid rgb(72, 72, 72);
+    padding: 4px;
+    border-radius: 7px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buscar:focus-within {
+    border: 1px solid rgb(162, 27, 27);
+    background-color:rgb(237, 237, 237);
+
+}
+
+.buscar > input {
+    outline: none;
+    border: 0px;
+}
+
+.iconoBusqueda:hover {
+    color:red;
 }
