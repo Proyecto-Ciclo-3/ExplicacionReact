@@ -1,4 +1,4 @@
-
+import CardDiscosMetal from './components/CardDiscosMetal';
 import './styles/styles.css';
 import logo from './media/physics.png';
 import vrag from './media/vrag.jpg';
@@ -42,15 +42,6 @@ function App() {
   );
 }
 
-function CardDiscosMetal({nombreBanda, imagen}) {
-    return (
-        <li className='breedCard backgroundGris'>
-            <div className='contenedorImagen'>
-                <img src={imagen} alt={nombreBanda}/>
-            </div>  
-            <span className='breedTitle'>{nombreBanda}</span>
-        </li>
-    ) 
-}
+
 
 export default App;
