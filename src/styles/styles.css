@@ -87,7 +87,7 @@ ul {
 }
 
 .breedTitle {
-  color: rgb(73, 5, 5);
+  color: rgb(255, 255, 255);
   margin: 10px 0;
   font-weight: bold;
 
@@ -109,4 +109,12 @@ ul {
   object-fit: cover;
   width: 100%;
   border-radius: 10px;
+}
+
+.backgroundGris {
+  background-color: gray;
+}
+
+.backgroundRed {
+  background-color: rgb(130, 68, 68);
 }

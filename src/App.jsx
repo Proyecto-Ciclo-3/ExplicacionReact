@@ -27,27 +27,30 @@ function App() {
         <section>
             <h1>Black Metal Albums</h1>
             <ul className='breedCardContainer'>
-                <li className='breedCard'>
-                    <div className='contenedorImagen'>
-                    <img src={vrag}
-                    alt='Vrag - Harcom'/>
-                    </div>  
-                    <span className='breedTitle'>Vrag-Harcom(2021)</span>
-                </li>
-                <li className='breedCard'>
-                    <div className='contenedorImagen'>
-                    <img src={nigrum}
-                    alt='Nigrum Tenebris - I am the serpent'/>
-                    </div>
-                    <span className='breedTitle'>Nigrum Tenebris-I am the serpent (2021)</span>
-                </li>
+               <CardDiscosMetal nombreBanda='Vrag' imagen={vrag} />
+               <CardDiscosMetal nombreBanda='Nigrum Tenebris' imagen={nigrum} />
+               <CardDiscosMetal nombreBanda='Vrag' imagen={vrag} />
+               <CardDiscosMetal nombreBanda='Nigrum Tenebris' imagen={nigrum} />
             </ul>
         </section>
         <section></section>
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
     </div>
   );
+}
+
+function CardDiscosMetal({nombreBanda, imagen}) {
+    return (
+        <li className='breedCard backgroundGris'>
+            <div className='contenedorImagen'>
+                <img src={imagen} alt={nombreBanda}/>
+            </div>  
+            <span className='breedTitle'>{nombreBanda}</span>
+        </li>
+    ) 
 }
 
 export default App;
