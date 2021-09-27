@@ -1,6 +1,12 @@
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+
+
 
 function VragInfoPage() {
-    return <div>Esta es la página de info de Vrag</div>;
+    return (
+        <div>Info sobre Vrag</div>
+    )
 }
 
 export default VragInfoPage;

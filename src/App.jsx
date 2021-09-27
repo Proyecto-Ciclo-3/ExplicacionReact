@@ -1,24 +1,31 @@
 import Index from 'pages';
+import Layout from 'components/layouts/Layout';
+import Nigrum from 'pages/nigrum';
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import VragInfoPage from 'pages/vrag';
 import 'styles/styles.css';
 
 
 function App() {
-  return (
+return (
     <div className='App'>
         <Router>
-            <Switch>
+            <Layout>
+                <Switch>
                 <Route path="/vrag">
                     <VragInfoPage />
+                </Route>
+                <Route path="/nigrum">
+                    <Nigrum />
                 </Route>
                 <Route path="/">
                     <Index />
                 </Route>
-            </Switch>
+                </Switch>
+                </Layout>
         </Router>
     </div>
-  );
+);
 }
 
 export default App;
